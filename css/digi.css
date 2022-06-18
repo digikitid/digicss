@@ -1,0 +1,177 @@
+/*!
+ * Digi.css
+ * 
+ * @version 1.0.0
+ * @author Digitalkit Team
+ * 
+ * Copyright (c) 2022 Digitalkit
+ */
+
+/**
+ * Base
+ * =====================================================================
+ */
+
+:root {
+	--font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
+    "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+
+	--primary-black: #080F22;
+	--primary-blue: #3F73F4;
+	--primary-white: #ffffff;
+
+	--black-light: #212738;
+	--black-xlight: #393f4e;
+	--black-xxlight: #525764;
+	--black-xxxlight: #6b6f7a;
+	--black-xxxxlight: #848791;
+
+	--border-dark: #b8b9ba;
+	--border: #e6e7e9;
+	--border-light: #ebeced;
+
+	--red-dark: #ca4d60;
+	--red: #fc6078;
+	--red-light: #fd8093;
+
+	--blue-dark: #1048D5;
+	--blue: #3F73F4;
+	--blue-light: #7D9FF5;
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: var(--primary-black);
+	font-family: var(--font-family);
+	font-size: 1rem;
+}
+
+header, nav, main, footer, section, 
+menu, aside, article, figure, figcaption, details {
+	display: block;
+}
+
+video, audio {
+	display: inline-block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	margin-bottom: 0.5em;
+	font-weight: bold;
+	line-height: 1.3;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 1.25em;
+	line-height: 1.4;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, ol {
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+blockquote {
+	margin: 1.25em;
+}
+
+pre {
+	display: block;
+	overflow: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+pre, code {
+	font-size: 1em;
+	font-family: monospace;
+}
+
+table {
+	overflow: auto;
+	border-collapse: collapse;
+	margin: 1.25em 0;
+}
+
+table tr th, 
+table tr td {
+	/*border: 1px solid var(--dg-xxlight-black);*/
+	padding: 0.625em;
+}
+
+figure {
+	margin: 1.25em 0;
+}
+
+figure img {
+	width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+figure figcaption {
+	font-size: 0.813rem;
+	padding: 0.313em 0;
+}
+
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: 1em;
+	border-radius: 0.313em;
+	outline: none;
+}
+
+button {
+	padding: 0.75em 1.25em;
+	border: none;
+	cursor: pointer;
+	background: var(--black-light);
+	color: var(--primary-white);
+}
+
+label {
+	display: inline-block;
+	margin: 0.313em 0;
+}
+
+input, select, textarea {
+	display: block;
+	padding: 0.625em;
+	border: none;
+	outline: none;
+	border: 1px solid var(--black-xxxlight);
+	color: var(--black-xlight);
+	border-radius: 0.313em;
+	font-family: inherit;
+	font-size: 1em;
+}
+
+/**
+ * Layout
+ * =====================================================================
+ */
+
+.cnt {
+	overflow: hidden;
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 0 1.25em;
+}
